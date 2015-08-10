@@ -10,9 +10,8 @@ var assets      = require('./config/assets.js'),
     mixins      = require('./src/mixins/mixins.js');
     validations.mappings.validate(mappings);
     validations.assets.validate(assets);
-
-    mixins.getFileType(assets[0],mappings);
-
+    var _assets = mixins.categorize(assets,mappings);
+    var _assets_vendor = mixins.categorize(vendor);
 console.log("grunt_assets ended");
 
 /**
