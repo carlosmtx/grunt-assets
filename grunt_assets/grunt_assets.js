@@ -1,14 +1,17 @@
 console.log('grunt_assets started');
-
+var _ =  require('lodash');
 var assets      = require('./config/assets.js'),
     vendor      = require('./config/assets_vendor.js'),
-    mappings    = require('./config/mappings.js');
+    mappings    = require('./config/mappings.js'),
     validations = {
         mappings    : require('./src/validations/mappings.js'),
         assets      : require('./src/validations/assets.js')
-    };
+    },
+    mixins      = require('./src/mixins/mixins.js');
     validations.mappings.validate(mappings);
     validations.assets.validate(assets);
+
+    mixins.getFileType(assets[0],mappings);
 
 console.log("grunt_assets ended");
 
