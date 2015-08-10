@@ -7,10 +7,9 @@ module.exports.validate = function(assets,env){
 
     if(!_.isArray(assets)) throw 'File: ' + file_str + ' must be an array';
     _.every(assets,function(val,key){
-        console.log(val.src);
-        if( !(_.isString(val.src)  || _.isArray(val.src)))   throw 'File: ' + file_str + ' - Key:' + key +': src must be a string or an array';
-        if( !_.isString(val.dest))                           throw 'File: ' + file_str + ' - Key:' + key +': dest must be a string';
-        if(_.includes(val.src,''))                           throw 'File: ' + file_str + ' - Key'  + key +': src must not be empty';
-        if(_.includes(val.dest,''))                          throw 'File: ' + file_str + ' - Key'  + key +': dest must not be empty';
+        if( !(_.isString(val.src)  || _.isArray(val.src)))   throw 'File: ' + file_str + ' - Key: '  + key +': src must be a string or an array';
+        if( !_.isString(val.dest))                           throw 'File: ' + file_str + ' - Key: '  + key +': dest must be a string';
+        if(_.includes(val.src,''))                           throw 'File: ' + file_str + ' - Key: '  + key +': src must not be empty';
+        if(val.dest === ''       )                           throw 'File: ' + file_str + ' - Key: '  + key +': dest must not be empty';
     });
 };
