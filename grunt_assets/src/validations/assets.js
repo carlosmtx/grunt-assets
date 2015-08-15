@@ -1,4 +1,5 @@
-var _= require('lodash');
+var _= require('lodash'),
+    Q= require('q');
 
 module.exports.validate = function(assets,env){
     //TODO: Refactor exception messages out + check if src array is empty
@@ -12,4 +13,6 @@ module.exports.validate = function(assets,env){
         if(_.includes(val.src,''))                           throw 'File: ' + file_str + ' - Key: '  + key +': src must not be empty';
         if(val.dest === ''       )                           throw 'File: ' + file_str + ' - Key: '  + key +': dest must not be empty';
     });
+    return Q.resolve();
+
 };

@@ -1,8 +1,3 @@
-var vendor = [
-    {
-        src:'',
-        dest:''
-    }
-];
+module.exports = {
 
-module.exports = vendor;
+}

@@ -1,18 +1,31 @@
 console.log('grunt_assets started');
-var _ =  require('lodash');
-var assets      = require('./config/assets.js'),
-    vendor      = require('./config/assets_vendor.js'),
-    mappings    = require('./config/mappings.js'),
-    validations = {
+var _       =  require('lodash'),
+    grunt   =  require('grunt');
+
+
+var _assets      = require('./config/assets.js'),
+    _vendor      = require('./config/assets_vendor.js'),
+    mappings     = require('./config/mappings.js'),
+    validations  = {
         mappings    : require('./src/validations/mappings.js'),
         assets      : require('./src/validations/assets.js')
     },
-    mixins      = require('./src/mixins/mixins.js');
-    validations.mappings.validate(mappings);
-    validations.assets.validate(assets);
-    var _assets = mixins.categorize(assets,mappings);
-    var _assets_vendor = mixins.categorize(vendor);
-console.log("grunt_assets ended");
+    assetManager = require('./src/asset/asset_manager.js');
+//validations.mappings.validate(mappings);
+//validations.assets.validate(_assets,mappings);
+var assets = [];
+_.forEach(_assets,function(asset,key){
+    assetManager.expand(asset);
+    assets.push(asset);
+});
+
+var path = require('path');
+_.forEach(path,function(key,val){
+    console.log(val);
+})
+
+console.log(path.basename('/var/1/'))
+
 
 /**
  * 1. Check if config files have errors
