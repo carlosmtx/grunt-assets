@@ -1,5 +1,5 @@
-var _   = require('lodash'),
-    Q   = require('q');
+var _    = require('lodash'),
+    error= require('./error/errors.js');
 module.exports.validate = function(extensions){
     var arrUnion = [];
     var lengthA = 0;
