@@ -1,7 +1,7 @@
 module.exports = function(){
 	return [
 		{
-            /* ASSET A + B*/
+            /** ASSET A + B*/
 			src: [
                 'test_data/src/assets/asset_a.js',
                 'test_data/src/assets/asset_b.js'
@@ -12,13 +12,14 @@ module.exports = function(){
 			src:'test_data/src/assets/asset_c.js',
 			dest:'test_data/compiled/asset_c.min.js'
 		},{
-            /* ASSET D + E*/
+            /** ASSET D + E*/
 			src:[
 				'test_data/src/assets/asset_d.css',
 				'test_data/src/assets/asset_e.css'
 			],
 			dest:'test_data/compiled/asset_d_e.min.css'
         },{
+            /** ASSET  F*/
             src :'test_data/src/assets/asset_f.css',
             dest:'test_data/compiled/asset_f.min.css'
         }
