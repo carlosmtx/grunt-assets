@@ -1,0 +1,5 @@
+[
+  {
+    "src" : "asset_config/**.json","dest": "/dasdasda"
+  }
+]

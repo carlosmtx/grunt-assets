@@ -1,0 +1,5 @@
+[
+  {"src": ["file01","file02"] , "dest": "file03"},
+  {"src": ["file01","file02"] , "dest": "file03"},
+  {"src": ["file01","file02"] , "dest": "file03"}
+]

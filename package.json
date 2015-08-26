@@ -1,14 +1,15 @@
 {
-  "name": "samuel",
+  "name": "grunt-asset-helper",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "asset_organizer/grunt_assets.js",
   "scripts": {
     "test": "node ./node_modules/mocha/bin/mocha"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "debug": "^2.2.0",
     "grunt": "^0.4.5",
     "grunt-contrib-clean": "^0.6.0",
     "grunt-contrib-copy": "^0.8.0",

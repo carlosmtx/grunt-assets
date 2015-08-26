@@ -1,0 +1,7 @@
+{
+  "javascript" : [".js"],
+  "stylesheet" : [".css"],
+  "font"       : [".ttf",".woff"],
+  "image"      : [".jpeg",".png"],
+  "json"       : [".json"]
+}

@@ -1,6 +1,6 @@
 var _    = require('lodash'),
     error= require('./error/errors.js');
-module.exports.validate = function(extensions){
+module.exports.validate = function(extensions,grunt){
     var arrUnion = [];
     var lengthA = 0;
 
