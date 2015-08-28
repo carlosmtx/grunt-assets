@@ -1,10 +1,10 @@
 {
-  "name": "grunt-asset-helper",
-  "version": "1.0.0",
+  "name": "grunt-assets-manager",
+  "version": "0.0.2",
   "description": "",
-  "main": "asset_organizer/grunt_assets.js",
+  "main": "grunt-assets/grunt-assets.js",
   "scripts": {
-    "test": "node ./node_modules/mocha/bin/mocha"
+    "test": ""
   },
   "author": "",
   "license": "ISC",

@@ -1,7 +1,7 @@
 {
   "javascript" : [".js"],
   "stylesheet" : [".css"],
-  "font"       : [".ttf",".woff"],
+  "font"       : [".ttf",".woff",".woff2",".eot",".svg"],
   "image"      : [".jpeg",".png"],
   "json"       : [".json"]
 }

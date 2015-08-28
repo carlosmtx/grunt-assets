@@ -1,5 +1,26 @@
 [
   {
-    "src" : "asset_config/**.json","dest": "/dasdasda"
+    "src" : "bower_components/bootstrap/dist/js/bootstrap.min.js",
+    "dest": "web/vendor/bootstrap/js/bootstrap.min.js"
+   },{
+    "src" : "bower_components/bootstrap/dist/css/bootstrap.min.css",
+    "dest" : "web/vendor/bootstrap/css/bootstrap.min.css"
+  },{
+    "src" : "bower_components/bootstrap/dist/fonts/*",
+    "dest": "web/vendor/bootstrap/fonts/"
+  },{
+    "src" : "bower_components/bootstrap/bower_components/jquery/jquery.min.js",
+    "dest": "web/vendor/jquery/jquery.min.js"
+  },{
+    "src" : "bower_components/bootstrap/bower_components/jquery/jquery.min.js",
+    "dest": "web/vendor/jquery/jquery.min.js"
+  },{
+    "src" : [
+      "bower_components/jquery-ui/ui/accordion.js",
+      "bower_components/jquery-ui/ui/autocomplete.js",
+      "bower_components/jquery-ui/ui/button.js",
+      "bower_components/jquery-ui/ui/core.js"
+    ],
+    "dest" : "web/vendor/jquery-ui.min.js"
   }
 ]

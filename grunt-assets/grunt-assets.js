@@ -9,8 +9,8 @@ module.exports.build = function(grunt){
             debug('starting');
             debug('reading assets&&mappings json files');
             var json_data = {
-                assets  : grunt.file.readJSON('./assets_config/assets.json'),
-                vendor  : grunt.file.readJSON('./assets_config/assets_vendor.json'),
+                assets   : grunt.file.readJSON('./assets_config/assets.json'),
+                vendor   : grunt.file.readJSON('./assets_config/assets_vendor.json'),
                 mappings : grunt.file.readJSON('./assets_config/mappings.json')
             };
 
@@ -36,7 +36,7 @@ module.exports.build = function(grunt){
                 assets.assets = _.union(assets.assets, asset.toGruntAsset());
             });
             debug('expanding asset_vendor ');
-            _.forEach(assets_pre_processed.assets,function(asset){
+            _.forEach(assets_pre_processed.vendor,function(asset){
                 assets.vendor = _.union(assets.vendor, asset.toGruntAsset());
             });
 

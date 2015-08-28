@@ -1,11 +1,10 @@
 var grunt  = require('grunt');
-var AssetsManager = require('./grunt_asssets/grunt-assets.js');
+var AssetsManager = require('./grunt-assets/grunt-assets.js');
 
 var manager = AssetsManager.build(grunt);
 var assets = manager.getAssets();
+console.log(manager.getSrcOnly(assets).assets);
 
-
-console.log(assets);
 
 grunt.initConfig({
     uglify: {
